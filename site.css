@@ -1,0 +1,100 @@
+:root {
+  --brand-green: #307649;
+  --brand-gold: #F4C542;
+  --text: #1f2a1f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: var(--text);
+  background: #ffffff;
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--brand-green);
+  padding: 12px 20px;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo img {
+  height: 34px;
+  display: block;
+}
+
+.lang-select {
+  position: relative;
+}
+
+.lang-select select {
+  background: #ffffff;
+  color: #1c2a1c;
+  border: 0;
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 14px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.page {
+  max-width: 860px;
+  margin: 0;
+  padding: 28px 32px;
+}
+
+.page a {
+  color: var(--brand-green);
+}
+
+.links {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.links li {
+  margin: 6px 0;
+}
+
+.lang {
+  display: none;
+}
+
+.lang.active {
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .site-header {
+    padding: 10px 14px;
+  }
+
+  .logo img {
+    height: 28px;
+  }
+
+  .page {
+    padding: 20px 16px;
+  }
+}
